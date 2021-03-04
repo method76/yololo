@@ -1,5 +1,6 @@
 #![allow(deprecated)] // TODO: remove this when removing dialogs
 
+#[macro_use]
 extern crate boxfnonce;
 extern crate tinyfiledialogs as tfd;
 extern crate urlencoding;

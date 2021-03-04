@@ -212,6 +212,8 @@ unsafe extern "C" fn webview_new(
     // Enable webgl and canvas features.
     webkit_settings_set_enable_webgl(settings, 1);
     webkit_settings_set_enable_accelerated_2d_canvas(settings, 1);
+    // method76 added : to use local resources
+    webkit_settings_set_enable_file_access_from_file_uris(settings, 1);
 
     if debug > 0 {
         webkit_settings_set_enable_write_console_messages_to_stdout(settings, 1);

@@ -3,8 +3,8 @@ name = "yololo"
 version = "0.3.0"
 authors = ["Sungjoon Kim <ted@bitflow.ai>"]
 readme = "README.md"
-license = "MIT"
-repository = "https://github.com/Boscop/web-view"
+license = "GPL3"
+repository = "https://github.com/method76/yololo"
 description = "Rust bindings for webview, a tiny cross-platform library to render web-based GUIs for desktop applications"
 keywords = ["yolo", "label", "labelimg", "yololabel", "deep learning"]
 categories = ["gui", "web-programming", "api-bindings", "rendering", "visualization"]
@@ -12,6 +12,7 @@ exclude = []
 edition = "2018"
 
 [dependencies]
+webview-sys = { path = "webview-sys", version = "0.5.1" }
 diesel = "1.4.4"
 dotenv = "0.15.0"
 actix-web = "3"
@@ -26,14 +27,14 @@ serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
 urlencoding = "1.0"
-webview-sys = "0.6.1"
+#webview-sys = "0.6.1"
 boxfnonce = "0.1"
 tinyfiledialogs = "3.3.9"
 image = "0.23.13"
 jammdb = "0.4.0"
 
 [features]
-edge = ["webview-sys/edge"]
+#edge = ["webview-sys/edge"]
 
 [dev-dependencies]
 grep = "0.2.4"
